@@ -1,0 +1,24 @@
+table tbody tr th {
+    color: red;
+    font-size: 20;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    border: 1px solid green;
+}
+
+.username {
+    border: 1px solid orangered;
+}
+
+#mobile {
+    border: 1px solid grey;
+}
+
+button {
+    border: 0;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+}

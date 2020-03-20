@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register Page</title>
+        <meta name="author" content="Bhaswanth" />
+
+        <link rel="stylesheet" type="text/css" href="login.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h1 id="heading"></h1>
+        <form id="register-form" name="registerform">
+            <table>
+                <tbody>
+                    <tr>
+                        <th style="
+                            color: green;
+                        ">Username/Email</th>
+                        <td>
+                            <input type="text" name="username" class="username" id="username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Mobile</th>
+                        <td>
+                            <input type="text" name="mobile" id="mobile" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <td>
+                            <input type="password" name="password" id="password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Login</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <button id="show-password"> <i class="fa fa-eye"></i></button>
+
+        <script type="text/javascript">
+            var form = document.getElementById('register-form')
+
+            form.addEventListener('submit', function() {
+                event.preventDefault()
+
+                var username = document.getElementById('username').value
+                var mobile = document.getElementById('mobile').value
+                var password = document.getElementById('password').value
+
+                if(username.length == 0) {
+                    alert("Please enter username")
+                    exit()
+                }
+
+                
+                if(mobile.length < 10) {
+                    alert("Mobile number is atleast 10 digits")
+                    exit()
+                }
+
+                if(password.length ==0) {
+                    alert("Please enter your password")
+                    exit()
+                }
+
+                if(password.length < 8 || password.length > 32) {
+                    alert("Password must be between 8 to 32 characters")
+                    exit()
+                }
+
+                var details = 'Username: ' + username + '\nMobile: ' + mobile + '\nPassword: ' + password
+                alert(details)
+            })
+
+
+            var heading = document.getElementById('heading')
+            heading.innerText = "Register Page"
+
+            function blinkText() {
+                if(heading.innerText == "") {
+                    heading.innerText = "RegisterPage"
+                }
+                else {
+                    heading.innerText = ""
+                }
+            }
+
+            var passbutton = document.getElementById('show-password')
+            passbutton.addEventListener('click', function() {
+                passtag = document.getElementById('password')
+                if(passtag.type == "password") {
+                    passtag.type = "text"
+                }
+                else {
+                    passtag.type = "password"
+                }
+            })
+
+            //setInterval(blinkText, 1000)
+        </script>
+    </body>
+</html>

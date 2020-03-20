@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>This is the demo page</title>
+        <meta name="author" content="Bhaswanth" />
+    </head>
+    <body>
+        <!-- Inline styles inside the HTML Tag itself -->
+        <h1 style="color: red">This is the main page heading</h1>
+        <h2 style="color: green">This is second heading</h2>
+        <h3 style="color: blue">This is third heading</h3>
+
+        <button id="button">Click Me</button>
+
+        <!-- Using internal Javascript using SCRIPT tag -->
+        <script type="text/javascript">
+            /* Display alert box on button click */
+            var button = document.getElementById('button')     /*  Select the button using its unique ID */
+            /*  Display alert box on button click */
+            button.addEventListener('click', function() {
+                alert("Button is clicked")
+            })
+        </script>
+    </body>
+</html>
+
+
+
