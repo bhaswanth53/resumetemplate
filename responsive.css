@@ -14,35 +14,41 @@ div {
 .color-green {
     color: green;
 }
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
 @media (min-width: 480px) {
-    .sm\:color-red {
-        color: red;
-    }
-    .sm\:color-green {
-        color: green;
+    .box {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        background-color: yellow;
     }
 }
 @media (min-width: 768px) {
-    .md\:color-red {
-        color: red;
-    }
-    .md\:color-green {
-        color: green;
+    .box {
+        width: 150px;
+        height: 150px;
+        border-radius: 0;
+        background-color: orange;
     }
 }
 @media (min-width: 960px) {
-    .lg\:color-red {
-        color: red;
-    }
-    .lg\:color-green {
-        color: green;
+    .box {
+        width: 200px;
+        height: 250px;
+        background-color: green;
     }
 }
 @media (min-width: 1220px) {
-    .xl\:color-red {
-        color: red;
-    }
-    .xl\:color-green {
-        color: green;
+    .box {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: red;
     }
 }
