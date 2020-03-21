@@ -1,0 +1,60 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-green {
+    color: green;
+}
+
+@media (min-width: 480px) {
+    .sm\:color-red {
+        color: red;
+    }
+
+    .sm\:color-green {
+        color: green;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:color-red {
+        color: red;
+    }
+
+    .md\:color-green {
+        color: green;
+    }
+}
+
+@media (min-width: 960px) {
+    .lg\:color-red {
+        color: red;
+    }
+
+    .lg\:color-green {
+        color: green;
+    }
+}
+
+@media (min-width: 1220px) {
+    .xl\:color-red {
+        color: red;
+    }
+
+    .xl\:color-green {
+        color: green;
+    }
+}
